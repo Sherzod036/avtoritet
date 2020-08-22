@@ -1,0 +1,93 @@
+.footer {
+    padding: 60px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item:first-child {
+        width: 30%;
+    }
+    &__item:last-child {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        margin-bottom: 10px;
+    }
+    &__title {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $color-primary;
+        margin-bottom: 20px;
+    }
+    &__services {
+        margin-right: 25px;
+    }
+    &__info {
+        margin-right: 25px;
+    }
+    &__navigation li {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & a {
+            font-weight: 600;
+        }
+    }
+    &__contacts {
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-phone {
+            display: flex;
+            margin-bottom: 15px;
+            & a {
+                font-weight: 700;
+                &:first-child {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        &-location {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            & span {
+                line-height: 160%;
+            }
+        }
+        &-letter {
+            display: flex;
+            align-items: center;
+            & a {
+                font-weight: 600;
+            }
+        }
+        &-icons {
+            display: flex;
+            align-items: center;
+            & a {
+                margin-right: 28px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &__horizontal {
+        width: 100%;
+        height: 3px;
+        background: $color-primary;
+        margin-left: 25px;
+    }
+}
+
+.copyright {
+    font-size: 14px;
+    font-weight: 600;
+}

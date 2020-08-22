@@ -1,0 +1,37 @@
+.subscribe {
+    background: url("../images/common/subscribe-bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__content {
+        width: 50%;
+        display: flex;
+        padding: 70px 0;
+    }
+    & .horizontal {
+        margin: 0;
+        margin-top: 19px;
+    }
+    &__info {
+        padding-left: 50px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 41px;
+        color: #fff;
+        line-height: 155%;
+        margin-bottom: 15px;
+    }
+    &__social-title {
+        font-weight: 600;
+        color: #fff;
+        line-height: 160%;
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+    &__social-icon {
+        margin-right: 45px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

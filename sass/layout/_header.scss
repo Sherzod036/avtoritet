@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    padding: 15px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__navigation ul {
+        display: flex;
+        align-items: center;
+        & li {
+            list-style: none;
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+            & a {
+                font-size: 18px;
+                font-weight: 700;
+                color: #fff;
+            }
+        }
+    }
+    &__button {
+        display: flex;
+        background: #fff;
+        padding: 11px 24px;
+        border-radius: 35px;
+        & img {
+            display: block;
+            margin-right: 11px;
+        }
+        & a {
+            color: $color-primary !important;
+        }
+    }
+}

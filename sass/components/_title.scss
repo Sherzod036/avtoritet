@@ -1,0 +1,37 @@
+.title {
+    display: flex;
+    justify-content: center;
+    & span {
+        font-family: "Nunito";
+        font-weight: 500;
+        font-size: 60px;
+    }
+    & span:first-child {
+        margin-right: 15px;
+    }
+}
+
+.subtitle {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 65px;
+}
+
+.color-primary {
+    color: $color-primary;
+    font-size: 16px;
+}
+
+.color-secondary {
+    color: $color-secondary;
+    font-size: 16px;
+}
+
+.horizontal {
+    width: 83px;
+    height: 6px;
+    background: $color-secondary;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
