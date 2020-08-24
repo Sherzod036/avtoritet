@@ -47,6 +47,17 @@ span {
     display: block;
 }
 
+input,
+button {
+    background: none;
+    outline: none;
+    border: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
 .mr-5 {
     margin-right: 5px;
 }
