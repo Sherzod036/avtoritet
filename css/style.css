@@ -9,6 +9,7 @@ body {
   font-family: "Open Sans";
   color: #4a4a4a;
   font-size: 16px;
+  height: 5000px;
 }
 
 body::-webkit-scrollbar {
@@ -77,7 +78,7 @@ button {
 
 .header {
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 3;
   padding: 15px 0;
 }
@@ -134,6 +135,12 @@ button {
 
 .header__button a {
   color: #145ce6 !important;
+}
+
+.header-background {
+  background: #0b2863;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero {
@@ -846,5 +853,42 @@ input[type="checkbox"] {
 .copyright {
   font-size: 14px;
   font-weight: 600;
+}
+
+.page-hero {
+  width: 100%;
+}
+
+.page-hero__wrapper {
+  width: 100%;
+  height: 237px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-hero h1 {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 50px;
+  color: #fff;
+}
+
+.page-visa {
+  padding: 72px 0;
+}
+
+.page-visa__text {
+  font-weight: 600;
+  color: #4a4a4a;
+  font-size: 18px;
+}
+
+.page-visa__text img {
+  margin: 35px 0;
+  margin-left: 35px;
 }
 /*# sourceMappingURL=style.css.map */

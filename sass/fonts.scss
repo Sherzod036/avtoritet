@@ -27,6 +27,15 @@
 
 @font-face {
     font-family: "Nunito";
+    src: url("../fonts/Nunito/Nunito-Bold.woff2") format("woff2"),
+        url("../fonts/Nunito/Nunito-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito";
     src: url("../fonts/Nunito/Nunito-SemiBold.woff2") format("woff2"),
         url("../fonts/Nunito/Nunito-SemiBold.woff") format("woff");
     font-weight: 600;
