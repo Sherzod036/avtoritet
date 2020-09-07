@@ -1,5 +1,9 @@
 .footer {
     padding: 60px 0;
+    &__bg {
+        position: absolute;
+        left: 25%;
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;

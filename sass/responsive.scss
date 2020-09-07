@@ -1,2 +1,231 @@
-@media only screen and (max-width: 0px) {
+@media only screen and (max-width: 1240px) {
+    .form__inputs {
+        flex-direction: column;
+        align-items: center;
+
+        & input {
+            margin-bottom: 15px;
+            display: block;
+        }
+    }
+    .tabs__item {
+        padding: 0;
+    }
+    .form__wrapper {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .form-calendar-icon {
+        top: 48%;
+    }
+    .form-arrow-icon {
+        display: none;
+    }
+    .form__route {
+        flex-direction: column;
+        & a:first-child {
+            margin-bottom: 15px;
+        }
+    }
+    .title span {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .subscribe__img {
+        display: none;
+    }
+    .subscribe__content {
+        width: 100%;
+        text-align: center;
+    }
+    .subscribe__title {
+        font-size: 35px;
+    }
+    .subscribe__social-title {
+        font-size: 22px;
+    }
+    .horizontal {
+        display: none;
+    }
+    .subscribe__info {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .offer__tours {
+        justify-content: center;
+    }
+    .working__bg {
+        display: none;
+    }
+    .working__cards {
+        flex-wrap: wrap;
+    }
+    .working__card {
+        width: 50%;
+    }
+    .footer__wrapper {
+        flex-wrap: wrap;
+    }
+    .footer-first-child {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .footer__item:last-child {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .footer__services {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 35px;
+    }
+    .footer__info {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 35px;
+    }
+    .footer__contacts-inner {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .footer__inner-inner {
+        width: 100%;
+    }
+    .footer__horizontal {
+        display: none;
+    }
+    .footer__title {
+        justify-content: center;
+    }
+    .footer__contacts {
+        width: 100%;
+    }
+    .footer__navigation {
+        text-align: center;
+    }
+    .footer__contacts-phone {
+        justify-content: center;
+    }
+    .footer__contacts-letter {
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    .footer__contacts-location {
+        width: 100%;
+        justify-content: center;
+    }
+    .footer__contacts-inner {
+        justify-content: center;
+    }
+    .footer__contacts-icons {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header__navigation ul li a {
+        font-size: 16px;
+    }
+    .hero {
+        height: 650px;
+    }
+    .hero__text {
+        font-size: 65px;
+    }
+    .hero__button {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 840px) {
+    .header {
+        background: #0b2863;
+    }
+    .header__wrapper {
+        flex-wrap: wrap;
+    }
+    .hamburger {
+        display: block;
+    }
+    .header__navigation {
+        display: none;
+        width: 100%;
+    }
+    .navigation {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        & li {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+            &:first-child {
+                margin-top: 25px;
+            }
+        }
+    }
+    .header__navigation ul li {
+        margin-right: 0;
+    }
+    .header__button {
+        width: 225px !important;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .title span {
+        font-size: 35px;
+    }
+    .working__card {
+        width: 100%;
+        &:first-child {
+            border-radius: 0px;
+        }
+        &:last-child {
+            border-radius: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero__text {
+        font-size: 50px;
+    }
+    .form__wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .offer__tour {
+        width: 100%;
+    }
+    .offer__tour-poster img {
+        width: 100%;
+    }
+    .footer__bg {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .title span {
+        font-size: 23px;
+    }
+    .hero__text {
+        font-size: 40px;
+    }
+    .offer__tour {
+        height: 399px;
+    }
+    .offer__tour-poster {
+        height: 212px;
+    }
 }

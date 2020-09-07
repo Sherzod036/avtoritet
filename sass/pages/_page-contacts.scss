@@ -1,0 +1,44 @@
+.page-contacts {
+    width: 100%;
+    position: relative;
+    &__items {
+        width: 100%;
+        padding: 95px 0;
+        display: flex;
+    }
+    &__item {
+        width: 30%;
+    }
+    &__inner-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+        & span {
+            font-weight: 600;
+            font-size: 18px;
+            color: #4a4a4a;
+        }
+    }
+    &__map {
+        border-top: 4px solid #145ce6;
+        width: 100%;
+        height: 386px;
+    }
+    &__subscribe {
+        display: flex;
+        & a {
+            margin-right: 25px;
+            &:first-child {
+                margin-left: 60px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__right-bg {
+        position: absolute;
+        top: 10%;
+        right: 0;
+    }
+}
