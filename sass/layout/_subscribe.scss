@@ -6,9 +6,9 @@
         display: flex;
     }
     &__content {
-        width: 50%;
+        width: 55%;
         display: flex;
-        padding: 70px 0;
+        align-items: center;
     }
 
     & .horizontal {
@@ -16,7 +16,10 @@
         margin-top: 19px;
     }
     &__info {
-        padding-left: 50px;
+        display: flex;
+        &-wrapper {
+            padding-left: 30px;
+        }
     }
     &__title {
         font-weight: 700;
@@ -39,7 +42,7 @@
         }
     }
     &__img {
-        width: 50%;
+        width: 45%;
         position: relative;
     }
     &__plane {

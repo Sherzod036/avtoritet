@@ -4,8 +4,15 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Avtoritet | Travel & Tours</title>
+        <link
+            rel="icon"
+            href="images/icons/favicon.png"
+            type="image/png"
+            sizes="16x16"
+        />
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/hamburgers.min.css" />
+        <link rel="stylesheet" href="css/slick.css" />
         <link rel="stylesheet" href="css/fonts.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/responsive.css" />
@@ -14,7 +21,13 @@
         <header class="header">
             <div class="wrapper header__wrapper">
                 <a href="#" class="logo header__logo">
-                    <img src="images/logos/logo.png" alt="" />
+                    <picture>
+                        <source
+                            media="(max-width:840px)"
+                            srcset="images/logos/logo-v3.png"
+                        />
+                        <img src="images/logos/logo.png" alt="" />
+                    </picture>
                 </a>
                 <!-- /Logo -->
                 <div class="hamburger hamburger--spin">
@@ -620,33 +633,35 @@
             <section class="section subscribe">
                 <div class="wrapper subscribe__wrapper">
                     <div class="subscribe__content">
-                        <div class="horizontal"></div>
                         <div class="subscribe__info">
-                            <h1 class="subscribe__title">
-                                Хотите получить уникальные предложения?
-                            </h1>
-                            <span class="subscribe__social-title">
-                                Следите за нами в социальных сетях.
-                            </span>
-                            <div class="subscribe__social-icons">
-                                <a href="#" class="subscribe__social-icon">
-                                    <img
-                                        src="images/icons/subscribe-telegram-icon.svg"
-                                        alt=""
-                                    />
-                                </a>
-                                <a href="#" class="subscribe__social-icon">
-                                    <img
-                                        src="images/icons/subscribe-instagram-icon.svg"
-                                        alt=""
-                                    />
-                                </a>
-                                <a href="#" class="subscribe__social-icon">
-                                    <img
-                                        src="images/icons/subscribe-facebook-icon.svg"
-                                        alt=""
-                                    />
-                                </a>
+                            <div class="horizontal"></div>
+                            <div class="subscribe__info-wrapper">
+                                <h1 class="subscribe__title">
+                                    Хотите получить уникальные предложения?
+                                </h1>
+                                <span class="subscribe__social-title">
+                                    Следите за нами в социальных сетях.
+                                </span>
+                                <div class="subscribe__social-icons">
+                                    <a href="#" class="subscribe__social-icon">
+                                        <img
+                                            src="images/icons/subscribe-telegram-icon.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="#" class="subscribe__social-icon">
+                                        <img
+                                            src="images/icons/subscribe-instagram-icon.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="#" class="subscribe__social-icon">
+                                        <img
+                                            src="images/icons/subscribe-facebook-icon.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -793,6 +808,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
+        <script src="js/vendors/slick.min.js"></script>
         <script src="js/script.js"></script>
         <script>
             var scene = document.getElementById("scene");
