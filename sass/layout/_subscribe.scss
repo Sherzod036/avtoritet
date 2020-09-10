@@ -2,6 +2,7 @@
     background: url("../images/common/subscribe-bg.jpg") no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     &__wrapper {
         display: flex;
     }

@@ -59,7 +59,6 @@
         }
         &-location {
             display: flex;
-            align-items: center;
             margin-bottom: 10px;
             & span {
                 line-height: 160%;
@@ -75,10 +74,15 @@
         &-icons {
             display: flex;
             align-items: center;
+            margin-left: 25px;
             & a {
                 margin-right: 28px;
                 &:last-child {
                     margin-right: 0;
+                }
+                &:hover svg path {
+                    fill: #145CE6;
+                    transition: all 0.3s ease-in-out;
                 }
             }
         }

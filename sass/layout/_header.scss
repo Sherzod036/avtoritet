@@ -12,16 +12,31 @@
         display: flex;
         align-items: center;
         & li {
+            position: relative;
             list-style: none;
             margin-right: 20px;
+            &:hover::after {
+                width: 100%;
+            }
             &:last-child {
                 margin-right: 0;
+            }
+            &::after {
+                content: "";
+                width: 0%;
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                background: #c4121a;
+                transition: all 0.3s ease-in-out;
             }
             & a {
                 font-size: 18px;
                 font-weight: 700;
                 color: #fff;
-                padding-bottom: 3px;
+                padding-bottom: 5px;
             }
         }
     }
@@ -30,8 +45,10 @@
         background: #fff;
         padding: 11px 24px;
         border-radius: 35px;
-        & img {
+        & svg {
             display: block;
+            width: 18px;
+            height: 21px;
             margin-right: 11px;
         }
         & a {
@@ -43,6 +60,12 @@
             & a {
                 color: #fff !important;
             }
+            & svg path {
+                fill: #fff !important;
+            }
+        }
+        &::after {
+            display: none !important;
         }
     }
     &-background {
@@ -52,8 +75,4 @@
         margin-top: -80px;
         z-index: 100;
     }
-}
-
-.header-border {
-    border-bottom: 2px solid #c4121a !important;
 }

@@ -18,6 +18,11 @@ $(document).ready(function () {
         $(".header__navigation").slideToggle().toggleClass("d-block");
     });
 
+    $('.tabs ul li a').on('click', function () {
+        $('.tabs ul li a').removeClass('active')
+        $(this).addClass('active');
+    });
+
     $(".single-tour__slider-bottom-imgs").slick({
         slidesToShow: 7,
         prevArrow:
@@ -90,10 +95,5 @@ $(document).ready(function () {
         y: "100%",
         duration: 2,
         opacity: 0,
-    });
-
-    $(".header__navigation ul li a").on("click", function () {
-        $(".header__navigation ul li a").removeClass("header-border");
-        $(this).addClass("header-border");
     });
 });

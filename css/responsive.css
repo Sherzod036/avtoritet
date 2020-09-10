@@ -361,6 +361,9 @@
   .single-blog__desc {
     font-size: 16px;
   }
+  .footer__contacts-icons {
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 400px) {

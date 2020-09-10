@@ -114,19 +114,37 @@ button {
 }
 
 .header__navigation ul li {
+  position: relative;
   list-style: none;
   margin-right: 20px;
+}
+
+.header__navigation ul li:hover::after {
+  width: 100%;
 }
 
 .header__navigation ul li:last-child {
   margin-right: 0;
 }
 
+.header__navigation ul li::after {
+  content: "";
+  width: 0%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: #c4121a;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .header__navigation ul li a {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
 }
 
 .header__button {
@@ -138,8 +156,10 @@ button {
   border-radius: 35px;
 }
 
-.header__button img {
+.header__button svg {
   display: block;
+  width: 18px;
+  height: 21px;
   margin-right: 11px;
 }
 
@@ -157,6 +177,14 @@ button {
   color: #fff !important;
 }
 
+.header__button:hover svg path {
+  fill: #fff !important;
+}
+
+.header__button::after {
+  display: none !important;
+}
+
 .header-background {
   background: #0b2863;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -164,10 +192,6 @@ button {
   position: fixed !important;
   margin-top: -80px;
   z-index: 100;
-}
-
-.header-border {
-  border-bottom: 2px solid #c4121a !important;
 }
 
 .hero {
@@ -230,7 +254,7 @@ button {
 }
 
 .form {
-  margin-top: -92px;
+  margin-top: -140px;
 }
 
 .form-arrow-icon {
@@ -354,7 +378,7 @@ button {
 }
 
 .tabs {
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 
 .tabs ul {
@@ -374,8 +398,31 @@ button {
   margin-right: 0;
 }
 
+.tabs ul li:first-child a::after {
+  left: 25%;
+}
+
+.tabs ul li:last-child a::after {
+  left: 5%;
+}
+
 .tabs ul li a {
   color: rgba(255, 255, 255, 0.56);
+  position: relative;
+}
+
+.tabs ul li a.active::after {
+  display: block;
+}
+
+.tabs ul li a::after {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 34.02px;
+  height: 6px;
+  margin-top: 23px;
+  background: #FD9704;
 }
 
 .tabs__item {
@@ -395,6 +442,13 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
+.horizontal-block {
+  width: 100%;
+  height: 0;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 35px;
+}
+
 .offer {
   width: 100%;
   padding: 65px 0;
@@ -407,6 +461,9 @@ input[type="checkbox"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -618,6 +675,8 @@ input[type="checkbox"] {
 }
 
 .working__card-info {
+  position: relative;
+  z-index: 5;
   padding: 40px 40px;
 }
 
@@ -667,6 +726,7 @@ input[type="checkbox"] {
   background: url("../images/common/subscribe-bg.jpg") no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .subscribe__wrapper {
@@ -923,9 +983,6 @@ input[type="checkbox"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 10px;
 }
 
@@ -953,6 +1010,7 @@ input[type="checkbox"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 25px;
 }
 
 .footer__contacts-icons a {
@@ -961,6 +1019,12 @@ input[type="checkbox"] {
 
 .footer__contacts-icons a:last-child {
   margin-right: 0;
+}
+
+.footer__contacts-icons a:hover svg path {
+  fill: #145CE6;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer__horizontal {
