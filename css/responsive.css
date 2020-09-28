@@ -1,3 +1,22 @@
+@media only screen and (max-width: 1366px) {
+    .hero {
+        height: 700px;
+    }
+    .hero__text {
+        font-size: 50px;
+        margin-top: 140px;
+    }
+    .hero__wrapper {
+        justify-content: flex-start !important;
+    }
+    .form {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
 @media only screen and (max-width: 1240px) {
   .form__inputs {
     -webkit-box-orient: vertical;
@@ -14,6 +33,11 @@
   }
   .tabs__item {
     padding: 0;
+  }
+  .form {
+      position: relative;
+      z-index: 5;
+      transform: translate(-1);
   }
   .form__wrapper {
     width: 500px;
@@ -186,9 +210,6 @@
   .hero {
     height: 650px;
   }
-  .hero__text {
-    font-size: 65px;
-  }
   .hero__button {
     font-size: 16px;
   }
@@ -227,6 +248,10 @@
   }
   .hamburger {
     display: block;
+  }
+  
+  .header__inner-wrapper {
+      display: flex;
   }
   .header__navigation {
     display: none;
@@ -364,6 +389,23 @@
   .footer__contacts-icons {
     margin-left: 0;
   }
+  
+  .form .wrapper {
+      padding: 0 !important;
+  }
+  .form__wrapper {
+      border-radius: 0;
+      background: #0B2863;
+  }
+  .form__inputs {
+      padding: 0 15px;
+  }
+  .form__inputs input {
+      width: 100%;
+  }
+  .form-calendar-icon {
+      left: 84%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -371,7 +413,23 @@
     font-size: 23px;
   }
   .hero__text {
-    font-size: 40px;
+    font-size: 20px;
+    margin-top: 110px;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+      margin-top: -443px;
+  }
+  
+  .form__inputs input {
+      padding: 14px;
+  }
+  
+  .hero__button {
+      width: 174px;
+      height: 31px;
+      font-size: 14px;
   }
   .offer__tour {
     height: 399px;
@@ -391,5 +449,6 @@
   .single-tour__close-icon {
     top: 2%;
   }
+  
 }
 /*# sourceMappingURL=responsive.css.map */

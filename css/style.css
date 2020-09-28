@@ -65,6 +65,11 @@ button {
   display: block !important;
 }
 
+.header__inner-wrapper {
+    display: none;
+    align-items: center;
+}
+
 .mr-5 {
   margin-right: 5px;
 }
@@ -196,7 +201,7 @@ button {
 
 .hero {
   width: 100%;
-  height: 761px;
+  height: 650px;
   background: url("../images/common/hero-bg.jpg") no-repeat;
   background-position: center;
   background-size: cover;
@@ -275,7 +280,7 @@ button {
 
 .form__wrapper {
   padding: 30px 0;
-  background: #0b2863;
+  background: rgb(11, 40, 99, 0.6);
   -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.09);
           box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.09);
   border-radius: 10px;
@@ -508,6 +513,7 @@ input[type="checkbox"] {
 }
 
 .offer__tour-poster img {
+    width: 100%;
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
@@ -778,6 +784,11 @@ input[type="checkbox"] {
 
 .subscribe__social-icon {
   margin-right: 45px;
+  transition: all 0.3s ease-in-out;
+}
+
+.subscribe__social-icon:hover svg path {
+    fill: #FD9704;
 }
 
 .subscribe__social-icon:last-child {
